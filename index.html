@@ -1,0 +1,68 @@
+<!--Página SetupEc-->
+<!--Realizado por: Jean Carlos Suárez-->
+
+<!--Tipo de documento: HTML-->
+<!DOCTYPE html>
+<!--Idioma HTML-->
+<html lang="es">
+    <!--Encabezado-->
+    <head>
+        <!---------------------Configuración inicial-------------------------->
+        <!--Codificación de caracteres-->
+        <meta charset="UTF-8">
+        <!--Compatibilidad con los navegadores-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Formato de escalabilidad de la página-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Referencia a los estilos css-->
+        <link rel="stylesheet" type="text/css" href="estilos.css"/>
+
+        <!--Título-->
+        <title>SetupEc</title>
+    </head>
+    <body>
+        <div id="presentacion">Available developers</div>
+        <form id="formulario">
+           <label>Nombre: </label> 
+           <input type="text" name="developer_name" placeholder="Developer Name" class="dev_name"/>
+           <label>URL Avatar: </label> 
+           <input type="text" name="url_avatar" placeholder="Avatar URL" class="url_avatar"/>
+           <br>
+           <label>Preséntate</label>
+           <br>
+           <input type="text" name="biography" placeholder="Biography" class="biography"/>
+           <br>
+           <label>Languajes: </label>
+           <div class="category">
+                <input type="checkbox" name="html" value=""/>
+                <label>HTML</label>
+            </div>
+            <div class="category">
+                
+                <input type="checkbox" name="js" value=""/>
+                <label>JS</label>
+            </div>
+            <div class="category">
+                
+                <input type="checkbox" name="css" value=""/>
+                <label>CSS</label>
+            </div>
+            <div class="category">
+                
+                <input type="checkbox" name="node" value=""/>
+                <label>Node</label>
+            </div>
+            <div >
+                
+                <input type="checkbox" name="mongodb" value=""/>
+                <label>MongoDB</label>
+            </div>
+            <div>
+                <button>Insertar</button>
+            </div>
+        
+
+
+        </form>
+    </body>
+</html>

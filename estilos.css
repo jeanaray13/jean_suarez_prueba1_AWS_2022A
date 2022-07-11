@@ -1,0 +1,20 @@
+#presentacion{
+    display: flex;
+    border-top: 50%;
+    background-color: purple;
+    height: 80px;
+    width: auto;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20pt;
+
+}
+
+#formulario{
+    border: 2px solid rgb(255, 255, 40);
+}
