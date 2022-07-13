@@ -1,3 +1,4 @@
+/*Sección de la parte inicial de la página*/
 #presentacion{
     display: flex;
     border-top: 50%;
@@ -12,9 +13,70 @@
     align-items: center;
     font-weight: bold;
     font-size: 20pt;
-
 }
 
+/*Sección del formulario*/
 #formulario{
-    border: 2px solid rgb(255, 255, 40);
+    border: 2px solid rgb(255, 230, 0);
+    padding: 10px;
+    height: 150px;
+}
+
+#dev_name{
+    width: 20%;
+    font-family: sans-serif;
+}
+
+#url_avatar{
+    width: 60%;
+    font-family: sans-serif;
+}
+
+#biography{
+    width: 100%;
+    height: 50px;
+    font-family: sans-serif;
+}
+
+.category{
+    float:left;
+}
+
+#insertar{  
+    align-items: center; 
+    align-content: center; 
+    transform: translate(250px,50%);
+}
+
+/*Sección de JavaScript*/
+.contenedor{
+    border: 2px solid rgb(148, 27, 57);
+    border-right: 4px solid rgb(148, 27, 57);
+    border-bottom: 8px solid rgb(148, 27, 57);;
+    margin-bottom: 20px;
+    height: 110px;
+    width: auto;
+}
+
+.imagen{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.link{
+    padding: 5px;
+}
+
+.bloque_img{
+    padding-left: 50px;
+}
+
+.icono{
+    width: 25px;
+    height: 25px;
+}
+
+.bio_texto{
+    font-weight: bold;
 }
