@@ -1,6 +1,5 @@
 <!--Página SetupEc-->
 <!--Realizado por: Jean Carlos Suárez-->
-
 <!--Tipo de documento: HTML-->
 <!DOCTYPE html>
 <!--Idioma HTML-->
@@ -16,53 +15,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Referencia a los estilos css-->
         <link rel="stylesheet" type="text/css" href="estilos.css"/>
+        <!--Referencia a las funciones javascript-->
+        <script type="text/javascript" src="funcion.js"></script>
 
         <!--Título-->
-        <title>SetupEc</title>
+        <title>SetupEc - Inicio</title>
     </head>
-    <body>
+    <!--Cuerpo de la página y cargar la información obtenida en JavaScript-->
+    <body onload="obtenerInfo()">
+        <!--Presentación de la página-->
         <div id="presentacion">Available developers</div>
+        <br>
+        <!--Sección del formulario-->
         <form id="formulario">
+            <!--Nombre-->
            <label>Nombre: </label> 
-           <input type="text" name="developer_name" placeholder="Developer Name" class="dev_name"/>
+           <input type="text" name="developer_name" placeholder="Developer Name" id="dev_name"/>
+           <!--Avatar-->
            <label>URL Avatar: </label> 
-           <input type="text" name="url_avatar" placeholder="Avatar URL" class="url_avatar"/>
+           <input type="text" name="url_avatar" placeholder="Avatar URL" id="url_avatar"/>
            <br>
-           <label>Preséntate</label>
+           <!--Biografía-->
+           <label>Preséntate:</label>
            <br>
-           <input type="text" name="biography" placeholder="Biography" class="biography"/>
+           <textarea type="text" name="biography" placeholder="Biography" id="biography"></textarea>
            <br>
-           <label>Languajes: </label>
+           <!--Lenguajes de programación-->
+           <label class="category">Lenguajes: </label>
            <div class="category">
-                <input type="checkbox" name="html" value=""/>
+                <input id="html" type="checkbox" name="html" value=""/>
                 <label>HTML</label>
             </div>
             <div class="category">
-                
-                <input type="checkbox" name="js" value=""/>
+                <input id="js" type="checkbox" name="js" value=""/>
                 <label>JS</label>
             </div>
             <div class="category">
-                
-                <input type="checkbox" name="css" value=""/>
+                <input id="css" type="checkbox" name="css" value=""/>
                 <label>CSS</label>
             </div>
             <div class="category">
-                
-                <input type="checkbox" name="node" value=""/>
+                <input id="node" type="checkbox" name="node" value=""/>
                 <label>Node</label>
             </div>
-            <div >
-                
-                <input type="checkbox" name="mongodb" value=""/>
+            <div class="category">
+                <input id="mongodb" type="checkbox" name="mongodb" value=""/>
                 <label>MongoDB</label>
             </div>
+            <br>
+            <!--Botón de ingresar-->
             <div>
-                <button>Insertar</button>
+                <input type="button" name="insertar" value="Insertar" id="insertar" onclick="ingresarUsuario()"/>
             </div>
-        
-
-
         </form>
+        <!--Sección JavaScript-->
+        <br>
+        <div id="cargar"></div>
     </body>
 </html>
